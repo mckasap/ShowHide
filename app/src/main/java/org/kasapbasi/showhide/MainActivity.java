@@ -17,7 +17,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void show(View v){
-tv.setVisibility(View.VISIBLE);
+//tv.setVisibility(View.VISIBLE)
+//
+   if (tv.getVisibility()==View.VISIBLE)
+         tv.setVisibility(View.INVISIBLE);
+    else
+        tv.setVisibility(View.VISIBLE);
 
     }
     public void hide(View v){
